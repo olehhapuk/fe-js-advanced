@@ -1,0 +1,13 @@
+.title {
+  font-size: 32px;
+  font-family: sans-serif;
+}
+
+/* div {
+  border: 1px solid red;
+} */
+
+:global(.title) {
+  color: palevioletred;
+  font-size: 24px;
+}

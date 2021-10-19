@@ -1,0 +1,19 @@
+.button {
+  background-color: #87a9ff;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.title_orange {
+  color: orange;
+}
+
+.title_grey {
+  color: grey;
+}
+
+.img {
+  width: 350px;
+}

@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 
+import styles from './Header.module.css';
+
 function Header({ children, filmCount }) {
   return (
-    <h1>
+    <h1 className={styles.title}>
       {children}, {filmCount} films
     </h1>
   );
