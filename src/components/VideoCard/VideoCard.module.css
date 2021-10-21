@@ -3,15 +3,18 @@
 }
 
 .title {
-  text-decoration: underline;
+  text-decoration: wavy;
+  font-family: sans-serif;
 }
 
 .title_orange {
-  color: orange;
+  composes: title;
+  color: var(--color-orange);
 }
 
 .title_grey {
-  color: grey;
+  composes: title;
+  color: var(--color-grey);
 }
 
 .img {

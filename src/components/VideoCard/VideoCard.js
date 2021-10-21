@@ -1,29 +1,20 @@
 import PropTypes from 'prop-types';
 
-// import './VideoCard.css';
 import styles from './VideoCard.module.css';
 
 function VideoCard({ imageUrl, title, description, isFavorite }) {
-  const titleClasses = [styles.title];
+  let titleClass = '';
   if (isFavorite) {
-    titleClasses.push(styles.title_orange);
+    titleClass = styles.title_orange;
   } else {
-    titleClasses.push(styles.title_grey);
+    titleClass = styles.title_grey;
   }
-  console.log(titleClasses);
+  console.log(titleClass);
 
   return (
     <div>
       <img src={imageUrl} alt={title} className={styles.img} />
-      <h3
-        // style={{
-        //   textDecoration: 'underline',
-        //   color: isFavorite ? 'orange' : 'grey',
-        // }}
-        className={titleClasses.join(' ')}
-      >
-        {title}
-      </h3>
+      <h3 className={titleClass}>{title}</h3>
       <p>{description}</p>
       {!isFavorite && (
         <button type="button" className="video-card__button">
